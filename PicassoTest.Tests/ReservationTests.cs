@@ -63,10 +63,7 @@ namespace PicassoTest.Tests
             var reservation = new Reservation { MadeBy = paco };
 
             //Act
-            var result = reservation.CanBeCancelledBy(pepe);
-
-            //Assert
-            Assert.That(result, Is.False);
+            Assert.Throws<ArgumentNullException>(() => reservation.CanBeCancelledBy(null));
         }
     }
 }
