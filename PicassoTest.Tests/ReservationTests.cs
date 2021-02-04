@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 
 namespace PicassoTest.Tests
 {
@@ -40,7 +41,7 @@ namespace PicassoTest.Tests
         }
 
         [Test]
-        public void CanBeCancelledBy_UserIsNotMadeBy_ReturnsTrue()
+        public void CanBeCancelledBy_UserIsNotMadeBy_ReturnsFalse()
         {
             //Arrange
             var paco = new User();
